@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Fala Cliente !!!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para padronizar as fotos e vídeos */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para as capas de vídeo clicáveis */
+        .video-container {
+            position: relative;
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background-color: #000;
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+        }
+
+        .video-container img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+        }
+
+        /* Ícone de Play Estilo YouTube */
+        .video-container::after {
+            content: '▶';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 0, 0, 0.9);
+            color: white;
+            font-size: 22px;
+            padding: 12px 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid #f2b705;
+            padding-left: 15px;
+            margin: 15px 0;
+        }
+
+        /* Estilo padronizado para os botões da barra lateral */
+        .sidebar-btn {
+            display: inline-block;
+            margin-top: 10px;
+            color: #003366;
+            font-weight: bold;
+            text-decoration: none;
+            background: #f2b705;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .sidebar-btn:hover {
+            background: #d4a004;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Mídia.jpg" alt="Logo Portal Fala Cliente">
+        </div>
+        <h1>portal Fala Cliente !!!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#manchetes">Manchetes</a></li>
+            <li><a href="#economia">Economia</a></li>
+            <li><a href="#politica">Política</a></li>
+            <li><a href="#esportes">Esportes</a></li>
+            <li><a href="#moda">Moda e Beleza</a></li>
+            <li><a href="#empregos">Vagas/Classificados</a></li>
+            <li><a href="#cdc">cdddc</a></li>
+            <li><a href="#sac">SAC</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <section id="manchetes">
+                <h2 class="section-title">Principais Manchetes</h2>
+                <div class="manchetes-grid">
+                    <article class="card">
+                        <img src="noticia1.jpg" alt="Notícia Principal 1">
+                        <h3>TITULO DA NOTICIA</h3>
+                        <p>TEXTO NOTICIA RESUMIDA</p>
+                        <a href="#politica" style="color: #003366; font-weight: bold; font-size: 0.8rem; text-decoration: none;">Leia mais em Política →</a>
+                    </article>
+
+                    <article class="card">
+                        <img src="noticia2.jpg" alt="Notícia Principal 2">
+                        <h3>TITULO DA NOTICIA</h3>
+                        <p>TEXTO NOTICIA RESUMIDA</p>
+                        <a href="#economia" style="color: #003366; font-weight: bold; font-size: 0.8rem; text-decoration: none;">Leia mais em Economia →</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="economia">
+                <h2 class="section-title">Economia</h2>
+                <div class="card">
+                    <img src="economia.jpg" alt="Imagem Economia">
+                    <p><i>Análise do mercado financeiro e os impactos nos supermercados locais.</i></p>
+                </div>
+            </section>
+
+            <section id="politica">
+                <h2 class="section-title">Política</h2>
+                <div class="card">
+                    <img src="politica.jpg" alt="Imagem Política">
+                    <p><i>As últimas decisões do governo e o impacto na vida do cidadão.</i></p>
+                </div>
+            </section>
+
+            <section id="cdc">
+                <h2 class="section-title">Código de Defesa do Consumidor</h2>
+                <a href="https://www.youtube.com/watch?v=8RSGPjEbK9g" target="_blank" class="video-container">
+                    <img src="https://img.youtube.com/vi/8RSGPjEbK9g/maxresdefault.jpg" alt="Capa Vídeo CDC">
+                </a>
+            </section>
+
+            <section id="esportes">
+                <h2 class="section-title">Esportes</h2>
+                <a href="https://www.youtube.com/watch?v=BSEO1HIJYqk" target="_blank" class="video-container">
+                    <img src="https://img.youtube.com/vi/BSEO1HIJYqk/maxresdefault.jpg" alt="Capa Vídeo Esportes">
+                </a>
+                <div class="card">
+                    <p><i>Tudo sobre o futebol paranaense e projetos esportivos.</i></p>
+                </div>
+            </section>
+
+            <section id="moda">
+                <h2 class="section-title">Moda e Beleza</h2>
+                
+                <a href="https://youtu.be/u0OLAWU9SII?si=Gkds8lWtr1qtKt4T" target="_blank" class="video-container">
+                    <img src="https://img.youtube.com/vi/u0OLAWU9SII/maxresdefault.jpg" alt="Capa Vídeo Moda e Beleza">
+                </a>
+
+                <div class="card">
+                    <p>
+                        <strong>O Teste de Rua do Novo Gel de Sobrancelhas</strong><br>
+                        <em>*Por: Redação Estilo & Comportamento*</em><br><br>
+                        Na tarde de hoje, nossa equipe foi às ruas para entender o que o público realmente pensa sobre o mais novo lançamento da *Ruby Rose: o gel de sobrancelhas. Com a promessa de fixação e tratamento, o produto despertou reações que foram do entusiasmo exagerado ao mais puro ceticismo.<br><br>
+                        <strong>O Primeiro Impacto: A Barreira do Humor</strong><br>
+                        A jornada começou com um "balde de água fria". Ao abordar o primeiro passante, a recepção não foi das mais calorosas. "O que você quer?", disparou o entrevistado, visivelmente impaciente. Mesmo diante da tentativa da repórter de apresentar os benefícios do produto, o "cliente mal-humorado" não deu trégua, encerrando a conversa com um ríspido "então vaza". Pelo visto, nem o melhor design de sobrancelhas do mundo seria capaz de levantar aquele astral.<br><br>
+                        <strong>### Fatos, Dados e Desconfiança ###</strong><br>
+                        Em um segundo momento, encontramos o perfil do "cliente desconfiado". Mais disposto a ouvir, mas não menos exigente, ele questionou cada detalhe.<br>
+                        * <strong>É bom mesmo?</strong><br>
+                        * <strong>Ajuda a crescer?</strong><br>
+                        * <strong>Quais vitaminas possui?</strong><br>
+                        A repórter destacou a presença da <strong>Vitamina E</strong>, essencial para o fortalecimento dos fios. No entanto, quando o assunto chegou ao bolso — o produto custa entre <strong>R$ 20,00 e R$ 25,00</strong> — o interesse desapareceu. "Não vou querer não", concluiu o rapaz, provando que o custo-benefício ainda é o maior juiz do mercado.<br><br>
+                        <strong>### O Entusiasta Inesperado ###</strong><br>
+                        Para fechar o dia com chave de ouro, a reportagem encontrou a antítese do primeiro entrevistado. O "cliente que fala muito" não só aceitou participar, como transformou a entrevista em um verdadeiro show. Após alguns ajustes no visual para "ficar bem na câmera", ele demonstrou um otimismo contagiante.
+                        <blockquote>
+                            "Se é bom, eu compraria com certeza! Porque se fosse ruim, ninguém compraria, a marca falia e nem estaria na sua mão agora, né?" — refletiu ele, com uma lógica impecável e muita energia.
+                        </blockquote>
+                        <strong>### Veredito das Ruas ###</strong><br>
+                        Embora as opiniões sobre a compra tenham sido divididas, o gel de sobrancelhas da Ruby Rose provou ser um ótimo iniciador de conversas. Entre os que fogem e os que não param de falar, o produto segue ganhando visibilidade pela sua composição nutritiva e preço acessível.<br><br>
+                        E você? Estaria no time dos desconfiados ou dos entusiastas?
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <aside>
+            <div id="empregos" class="sidebar-item">
+                <h2 class="section-title-small">Vagas e Classificados</h2>
+                <ul>
+                    <li>• Auxiliar de Operações</li>
+                    <li>• Operador de Caixa</li>
+                    <li>• Repositor de Mercadorias</li>
+                </ul>
+                <a href="site vagas e clasificações.html" class="sidebar-btn">Acessar Portal de Vagas →</a>
+            </div>
+
+            <div id="obituario" class="sidebar-item">
+                <h2 class="section-title-small">Obituário</h2>
+                <a href="https://canva.link/jdyqm0y2td0zprm" target="_blank" class="sidebar-btn">Ver Falecimentos →</a>
+            </div>
+
+            <div id="sac" class="sidebar-item sac-box">
+                <h2 class="section-title-small alt-border">SAC QR CODE</h2>
+                <img src="Design sem nome.png" alt="QR code" style="max-width: 250px; height: auto; display: block; margin: 0 auto;">
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="main-footer" style="background-color: #003366; color: #ffffff; padding: 40px 20px; border-top: 6px solid #f2b705; text-align: center; margin-top: 50px;">
+        <div class="footer-container" style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 25px;">
+            <div class="footer-logos">
+                <img src="Captura_de_tela_2026-03-27_155131-removebg-preview.png" alt="Logo do Time" style="max-width: 160px; height: auto;">
+            </div>
+            <div class="footer-info">
+                <h3 style="font-size: 1rem; color: #f2b705;">Senac Curitiba Centro</h3>
+                <p>Rua André de Barros, 750 - Centro | Curitiba - PR</p>
+                <p style="font-weight: bold; color: #f2b705;">&copy; 2026 Jornal Fala Cliente !!!</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
